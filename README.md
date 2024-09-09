@@ -18,9 +18,10 @@ docker compose up
 ### Клиентская часть
 * URL: localhost:5173
 
-![This is an image](/gitSource/HomePage.png)
-![This is an image](/gitSource/OpenImage.png)
-![This is an image](/gitSource/Directus.png)
+![This is an image](/gitSource/home.png)
+![This is an image](/gitSource/auth.png)
+![This is an image](/gitSource/cards.png)
+![This is an image](/gitSource/profile.png)
 
 
 #### Проект реализован с использованием
