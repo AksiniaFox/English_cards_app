@@ -55,13 +55,13 @@ const Profile: React.FC = () => {
     <>
     <form className='profile_form'>
 
-      <TextField
+      <TextField variant="standard"
         label="Имя"
         type="text"
         value={formState.firstName || ''}
         onChange={(e) => handleChange('firstName', e.target.value)}
       />
-      <TextField
+      <TextField variant="standard"
         label="Фамилия"
         type="text"
         value={formState.lastName || ''}
@@ -76,21 +76,21 @@ const Profile: React.FC = () => {
         }
         label="Есть ли отчество?"
       />
-      <TextField
+      <TextField variant="standard"
         label="Отчество"
         type="text"
         value={formState.patronymic || ''}
         onChange={(e) => handleChange('patronymic', e.target.value)}
         disabled={!formState.hasPatronymic}
       />
-      <TextField
+      <TextField variant="standard"
         label="Дата рождения"
         type="date"
         InputLabelProps={{ shrink: true }}
         value={formState.birthDate || ''}
         onChange={(e) => handleChange('birthDate', e.target.value)}
       />
-      <FormControl>
+      <FormControl variant="standard">
         <InputLabel>Пол</InputLabel>
         <Select
           value={formState.gender || ''}
@@ -126,14 +126,14 @@ const Profile: React.FC = () => {
         label="Есть ли дети"
       />
       {formState.hasChildren && (
-        <TextField
+        <TextField variant="standard"
           label="Количество детей"
           type="number"
           value={formState.childrenCount || ''}
           onChange={(e) => handleChange('childrenCount', e.target.value)}
         />
       )}
-       <FormControl>
+       <FormControl variant="standard">
         <InputLabel >Уровень английского</InputLabel>
         <Select
           value={formState.eng || ''}
@@ -147,13 +147,13 @@ const Profile: React.FC = () => {
           <MenuItem value="C2">C2</MenuItem>
         </Select>
       </FormControl>
-      <TextField 
+      <TextField variant="standard"
           label="Сколько лет опыта английским?"
           type="number"
           value={formState.engYears || ''}
           onChange={(e) => handleChange('engYears', e.target.value)}
         />
-      <FormControl>
+      <FormControl variant="standard">
         <InputLabel>Хотели бы учить язык здесь?</InputLabel>
         <Select
           value={formState.want || ''}
@@ -163,7 +163,7 @@ const Profile: React.FC = () => {
           <MenuItem value="no">Нет</MenuItem>
         </Select>
       </FormControl>
-      <FormControl>
+      <FormControl variant="standard">
         <InputLabel>Учились ли вы с подобным приложением?</InputLabel>
         <Select
           value={formState.study || ''}
@@ -173,7 +173,7 @@ const Profile: React.FC = () => {
           <MenuItem value="no">Нет</MenuItem>
         </Select>
       </FormControl> 
-      <FormControl>
+      <FormControl variant="standard" >
         <InputLabel >Желаемый уровень английского</InputLabel>
         <Select
           value={formState.englevel || ''}
@@ -187,25 +187,25 @@ const Profile: React.FC = () => {
           <MenuItem value="C2">C2</MenuItem>
         </Select>
       </FormControl>   
-      <TextField
+      <TextField variant="standard"
         label="Слово описывающее вас"
         type="text"
         value={formState.word_discribe || ''}
         onChange={(e) => handleChange('word_discribe', e.target.value)}
       /> 
-      <TextField
+      <TextField variant="standard"
         label="Страна проживания"
         type="text"
         value={formState.country || ''}
         onChange={(e) => handleChange('country', e.target.value)}
       /> 
-       <TextField
+       <TextField variant="standard"
         label="Город проживания"
         type="text"
         value={formState.city || ''}
         onChange={(e) => handleChange('city', e.target.value)}
       /> 
-      <TextField
+      <TextField variant="standard"
         label="Город мечты"
         type="text"
         value={formState.cityDream || ''}
