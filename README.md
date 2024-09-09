@@ -13,6 +13,14 @@ git clone https://github.com/AksiniaFox/English_cards_app
 ```bash
 docker compose up
 ```
+Логин для входа:
+```bash
+admin
+```
+Пароль для входа:
+```bash
+admin
+```
 
 ### Клиентская часть
 
