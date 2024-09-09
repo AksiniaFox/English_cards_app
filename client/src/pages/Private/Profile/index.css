@@ -1,0 +1,11 @@
+.profile_form {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    justify-content: center;
+}
+
+.profile_form * {
+    margin: 7px;
+}
