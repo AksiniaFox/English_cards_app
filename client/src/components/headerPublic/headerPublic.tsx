@@ -77,7 +77,14 @@ function HeaderPublic() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.url} onClick={handleCloseNavMenu} href={page.url}>
-                  <Typography sx={{ textAlign: 'center' }}>{page.name}</Typography>
+                  <Button
+                    key={page.url}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: 'black', display: 'block' }}
+                    href={page.url}
+                  >
+                    {page.name}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
